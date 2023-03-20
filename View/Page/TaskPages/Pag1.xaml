@@ -1,0 +1,108 @@
+﻿<Page x:Class="indProectAnohina.View.Page.TaskPages.Pag1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:indProectAnohina.View.Page.TaskPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Border>
+        <Grid>
+            <Image Source="/Images/16.jpg" 
+                   Stretch="UniformToFill"/>
+            <StackPanel>
+                <Button
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Style="{StaticResource MBut}"
+                    x:Name="K1"
+                    Content="{materialDesign:PackIcon Kind=ArrowBack}"
+                    Click="K1_Click"
+                    Foreground="White"
+                    FontSize="33">
+
+
+                </Button>
+            </StackPanel>
+            <Border Width="705"
+                    Height="400"
+                    HorizontalAlignment="Left" 
+                    Margin="0,25,0,25"
+                >
+                <Grid>
+                    <Canvas Margin="0,0,-107,0">
+                        <TextBlock Text="Гаммы — основополагающий элемент музыкальной теории."
+                                Style="{StaticResource Te1}" 
+                                   x:Name="MyText"
+                                   Height="55">
+                            <TextBlock.Triggers>
+                                <EventTrigger RoutedEvent="TextBlock.Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation   Storyboard.TargetName="MyText" 
+                                                                Storyboard.TargetProperty="Height"
+                                                             To="0.00" Duration="0:0:10"
+                                                             AutoReverse="True"
+                                                             RepeatBehavior="Forever"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </TextBlock.Triggers>
+                        </TextBlock>
+
+
+
+                        <Image Source="/Images/l.png" 
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center" 
+                               Width="580" Canvas.Left="10" 
+                               Canvas.Top="49" />
+
+
+                        <TextBlock Text="С точки зрения теории музыки, гамма – это звукоряд любой длины, движущийся вверх или вниз."
+                                   Style="{StaticResource Te1}" 
+                                   Canvas.Top="131" 
+                                    Height="39" 
+                                   Width="687" 
+                                   HorizontalAlignment="Left" 
+                                   Canvas.Left="10" 
+                                   VerticalAlignment="Center"/>
+                        <Button
+                            x:Name="Info1"
+                            Click="Info1_Click"
+                            Style="{StaticResource MBut}"
+                            Content="{materialDesign:PackIcon Kind=AcademicCap, Size=44 }" 
+                            Canvas.Left="188" 
+                            Canvas.Top="222"
+                            ></Button>
+                        <TextBlock Text="Натуральная мажорная гамма"
+                                   Style="{StaticResource Te1}" Canvas.Left="91" 
+                                   Canvas.Top="312"></TextBlock>
+                        <Button
+                            x:Name="Info2"
+                            Click="Info2_Click"
+                            Style="{StaticResource MBut}"
+                            Content="{materialDesign:PackIcon Kind=AcademicCap, Size=44 }" 
+                            Canvas.Left="335" 
+                            Canvas.Top="222" HorizontalAlignment="Left" VerticalAlignment="Center"
+                            >
+                        </Button>
+                        <TextBlock Text="Натуральная минорная гамма"
+                                   Style="{StaticResource Te1}" Canvas.Left="321" 
+                                   Canvas.Top="312" 
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Center"></TextBlock>
+
+
+                    </Canvas>
+
+                </Grid>
+            </Border>
+
+        </Grid>
+
+    </Border>
+
+</Page>

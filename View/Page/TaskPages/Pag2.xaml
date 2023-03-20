@@ -1,0 +1,62 @@
+﻿<Page x:Class="indProectAnohina.View.Page.TaskPages.Pag2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:indProectAnohina.View.Page.TaskPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Pag2"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Border>
+        <Grid>
+            <Image Source="/Images/16.jpg" 
+                   Stretch="UniformToFill"/>
+            <StackPanel>
+                <Button
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Style="{StaticResource MBut}"
+                    x:Name="K2"
+                    Content="{materialDesign:PackIcon Kind=ArrowBack}"
+                    Click="K2_Click"
+                    Foreground="White"
+                    FontSize="33">
+
+
+                </Button>
+            </StackPanel>
+            <Border Width="705"
+                    Height="400"
+                    HorizontalAlignment="Left" 
+                    Margin="0,25,0,25"
+                >
+                <Canvas>
+                    <TextBlock Text="Интевалы"
+                           Style="{StaticResource Te1}" 
+                               HorizontalAlignment="Left" 
+                               Canvas.Left="10" Canvas.Top="10" 
+                               VerticalAlignment="Center" Width="77"
+                               ></TextBlock>
+
+                    <TextBox x:Name="Infor"
+                             Width="526"
+                             HorizontalAlignment="Left" 
+                             Canvas.Top="35" VerticalAlignment="Center"
+                             BorderBrush="#8A2BE2"
+                             BorderThickness="2"
+                             Background="#B0C4DE"
+                             Height="286" TextChanged="Infor_TextChanged">
+
+
+
+
+                    </TextBox>
+
+
+                </Canvas>
+            </Border>
+
+        </Grid>
+    </Border>
+</Page>

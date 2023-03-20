@@ -1,0 +1,114 @@
+﻿<Page x:Class="indProectAnohina.View.Page.temes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:indProectAnohina.View.Page"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="temes"
+      Background="Lavender">
+
+    <Border>
+       
+
+        <Grid>
+           <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.25*"/>
+                <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+
+                <Border BorderBrush="Aquamarine"
+                        BorderThickness="5"
+                        CornerRadius="15"
+                        Background="LightSkyBlue">
+                    <ScrollViewer>
+                        <StackPanel
+                            Width="60"
+                            Height="700">
+
+                            <Button
+                                x:Name="s1"
+                                Style="{StaticResource Mane1}"
+                                Content="1"
+                                Click="s1_Click"></Button>
+                            <Button
+                                x:Name="s2"
+                                Style="{StaticResource Mane1}"
+                                Content="2"
+                                Click="s2_Click"></Button>
+                            <Button
+                                x:Name="s3"
+                                Style="{StaticResource Mane1}"
+                                Content="3"
+                                Click="s3_Click"></Button>
+                            <Button
+                                x:Name="s4"
+                                Style="{StaticResource Mane1}"
+                                Content="4"
+                                Click="s4_Click"></Button>
+                            <Button
+                                x:Name="s5"
+                                Style="{StaticResource Mane1}"
+                                Content="5"
+                                Click="s5_Click"></Button>
+                            <Button
+                                x:Name="s6"
+                                Style="{StaticResource Mane1}"
+                                Content="6"
+                                Click="s6_Click"></Button>
+                            <Button
+                                x:Name="s7"
+                                Style="{StaticResource Mane1}"
+                                Content="7"
+                                Click="s7_Click"></Button>
+                            <Button
+                                x:Name="s8"
+                                Style="{StaticResource Mane1}"
+                                Content="8"
+                                Click="s8_Click"></Button>
+                            <Button
+                                x:Name="s9"
+                                Style="{StaticResource Mane1}"
+                                Content="9"
+                                Click="s9_Click"></Button>
+                            <Button
+                                x:Name="s10"
+                                Style="{StaticResource Mane1}"
+                                
+                                Click="s10_Click">
+                                <StackPanel>
+                                    <materialDesign:PackIcon Kind="Home"
+                                                             Foreground="White">
+                                        
+                                    </materialDesign:PackIcon>  
+                                </StackPanel>
+                            </Button>
+
+
+                        </StackPanel>
+                    </ScrollViewer>
+                    
+                </Border>
+
+
+            </Grid>
+
+            <Border Grid.Column="2">
+                <Grid>
+                    <Image Source="/Images/16.jpg" 
+                           Stretch="UniformToFill"/>
+
+                </Grid>
+
+
+            </Border>
+            
+
+        </Grid>
+        
+    </Border>
+   
+</Page>

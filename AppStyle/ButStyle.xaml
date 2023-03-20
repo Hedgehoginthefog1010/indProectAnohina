@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Style x:Key="MBut" TargetType="Button"
+           BasedOn="{StaticResource MaterialDesignFlatSecondaryMidBgButton}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="GhostWhite"/>
+        <Setter Property="BorderThickness" Value="5,5,5,5"/>
+        <Setter Property="Padding" Value="20"/>
+        <Setter Property="Width" Value="85"/>
+        <Setter  Property="Height" Value="85"/>
+        <Setter Property="Foreground" Value="#FF00FF"/>
+        
+    </Style>
+    
+</ResourceDictionary>
