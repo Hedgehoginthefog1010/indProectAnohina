@@ -6,9 +6,91 @@
       xmlns:local="clr-namespace:indProectAnohina.View.Page.TaskPages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Pag3">
+      Title="Pag3"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Border>
+        <Grid>
+            <Image Source="/Images/16.jpg" 
+                   Stretch="UniformToFill"/>
+            <StackPanel>
+                <Button
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Style="{StaticResource MBut}"
+                    x:Name="K2"
+                    Content="{materialDesign:PackIcon Kind=ArrowBack}"
+                    Click="K2_Click"
+                    Foreground="White"
+                    FontSize="33">
 
-    <Grid>
-        
-    </Grid>
+
+                </Button>
+            </StackPanel>
+            <Border Width="705"
+                    Height="400"
+                    HorizontalAlignment="Left" 
+                    Margin="0,25,0,25"
+                >
+                <Canvas>
+                    <TextBlock Text="Трезвучия"
+                           Style="{StaticResource Te1}" 
+                               HorizontalAlignment="Left" 
+                               Canvas.Left="10" Canvas.Top="10" 
+                               VerticalAlignment="Center" Width="77"
+                               ></TextBlock>
+
+                    <TextBox x:Name="Infor3"
+                             Width="526"
+                             HorizontalAlignment="Left" 
+                             Canvas.Top="35" VerticalAlignment="Center"
+                             BorderBrush="#8A2BE2"
+                             BorderThickness="2"
+                             Background="#B0C4DE"
+                             Height="286" 
+                             TextChanged="Infor3_TextChanged">
+                    </TextBox>
+
+                    <Border
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom">
+                        <Canvas Margin="640,264,-640,-264">
+                            <Button
+                    x:Name="Info4"
+                    Click="Info4_Click"
+                    Style="{StaticResource MBut}"
+                    Content="Виды"
+                    Foreground="#B0C4DE"
+                    FontSize="15"
+                    Width="110">
+                                <Button.Triggers>
+                                    <EventTrigger RoutedEvent="Button.Click">
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <DoubleAnimation From="0" 
+                                                     To="150" 
+                                                     Duration="0:0:2" 
+                                                     Storyboard.TargetProperty="(Canvas.Right)"
+                                                     AutoReverse="False" 
+                                                     />
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger>
+                                </Button.Triggers>
+                            </Button>
+
+
+
+
+
+
+
+                        </Canvas>
+                    </Border>
+                </Canvas>
+            </Border>
+        </Grid>
+
+    </Border>
 </Page>

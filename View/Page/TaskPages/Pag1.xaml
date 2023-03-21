@@ -54,44 +54,83 @@
 
 
 
-                        <Image Source="/Images/l.png" 
-                               HorizontalAlignment="Left"
-                               VerticalAlignment="Center" 
-                               Width="580" Canvas.Left="10" 
-                               Canvas.Top="49" />
+                        <TextBlock
+                            Style="{StaticResource Te1}"
+                            Width="645"
+                            Height="116"
+                            HorizontalAlignment="Left" 
+                            Canvas.Left="20" 
+                            VerticalAlignment="Top" 
+                            Canvas.Top="70">
+                            <TextBox x:Name="Infor1"></TextBox>
+                        </TextBlock>
 
 
                         <TextBlock Text="С точки зрения теории музыки, гамма – это звукоряд любой длины, движущийся вверх или вниз."
                                    Style="{StaticResource Te1}" 
-                                   Canvas.Top="131" 
+                                   Canvas.Top="209" 
                                     Height="39" 
                                    Width="687" 
                                    HorizontalAlignment="Left" 
-                                   Canvas.Left="10" 
-                                   VerticalAlignment="Center"/>
+                                   Canvas.Left="20" 
+                                   VerticalAlignment="Top"/>
                         <Button
                             x:Name="Info1"
                             Click="Info1_Click"
                             Style="{StaticResource MBut}"
                             Content="{materialDesign:PackIcon Kind=AcademicCap, Size=44 }" 
-                            Canvas.Left="188" 
-                            Canvas.Top="222"
-                            ></Button>
+                            Canvas.Left="190" 
+                            Canvas.Top="248"
+                            >
+                            <Button.Triggers>
+                                <EventTrigger RoutedEvent="Button.Click">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation From="0" 
+                                                     To="190" 
+                                                     Duration="0:0:2" 
+                                                     Storyboard.TargetProperty="(Canvas.Left)"
+                                                     AutoReverse="False" 
+                                                     />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Button.Triggers>
+
+
+                        </Button>
                         <TextBlock Text="Натуральная мажорная гамма"
-                                   Style="{StaticResource Te1}" Canvas.Left="91" 
-                                   Canvas.Top="312"></TextBlock>
+                                   Style="{StaticResource Te1}" Canvas.Left="86" 
+                                   Canvas.Top="353" ></TextBlock>
                         <Button
                             x:Name="Info2"
                             Click="Info2_Click"
                             Style="{StaticResource MBut}"
                             Content="{materialDesign:PackIcon Kind=AcademicCap, Size=44 }" 
-                            Canvas.Left="335" 
-                            Canvas.Top="222" HorizontalAlignment="Left" VerticalAlignment="Center"
+                            Canvas.Right="248" 
+                            Canvas.Top="248" HorizontalAlignment="Left" 
+                            VerticalAlignment="Center" Canvas.Left="444"
                             >
+                            <Button.Triggers>
+                                <EventTrigger RoutedEvent="Button.Click">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation From="0" 
+                                                     To="450" 
+                                                     Duration="0:0:02" 
+                                                     Storyboard.TargetProperty="(Canvas.Left)"
+                                                     AutoReverse="False" 
+                                                     />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Button.Triggers>
+
+
                         </Button>
                         <TextBlock Text="Натуральная минорная гамма"
-                                   Style="{StaticResource Te1}" Canvas.Left="321" 
-                                   Canvas.Top="312" 
+                                   Style="{StaticResource Te1}" Canvas.Left="406" 
+                                   Canvas.Top="353" 
                                    HorizontalAlignment="Left"
                                    VerticalAlignment="Center"></TextBlock>
 

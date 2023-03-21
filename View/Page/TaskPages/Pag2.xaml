@@ -56,6 +56,23 @@
 
                 </Canvas>
             </Border>
+            <Border
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom">
+                <Canvas>
+                    <Button
+                    x:Name="Info3"
+                    Click="Info3_Click"
+                    Style="{StaticResource MBut}"
+                    Content="Смотреть"
+                    Foreground="#B0C4DE"
+                    FontSize="15"
+                    Width="110">
+                    </Button>
+                </Canvas>
+            </Border>
 
         </Grid>
     </Border>

@@ -45,5 +45,11 @@ namespace indProectAnohina.View.Page.TaskPages
 
 
         }
+
+        private void Info3_Click(object sender, RoutedEventArgs e)
+        {
+            CoreNav.N1.Navigate(new tema1());
+
+        }
     }
 }
