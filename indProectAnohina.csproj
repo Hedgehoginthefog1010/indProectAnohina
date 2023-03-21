@@ -79,7 +79,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="tema1.xaml.cs">
+    <Compile Include="View\Page\tema1.xaml.cs">
       <DependentUpon>tema1.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Page\MainPage.xaml.cs">
@@ -122,7 +122,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="tema1.xaml">
+    <Page Include="View\Page\tema1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
