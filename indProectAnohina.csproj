@@ -79,16 +79,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="View\Page\TaskPages\Pag7.xaml.cs">
+      <DependentUpon>Pag7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Page\TaskPages\Pag8.xaml.cs">
+      <DependentUpon>Pag8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Page\TaskPages\Pag9.xaml.cs">
+      <DependentUpon>Pag9.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Page\tema1.xaml.cs">
       <DependentUpon>tema1.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Page\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Page\Pag4.xaml.cs">
+    <Compile Include="View\Page\TaskPages\Pag4.xaml.cs">
       <DependentUpon>Pag4.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Page\Pag5.xaml.cs">
+    <Compile Include="View\Page\TaskPages\Pag5.xaml.cs">
       <DependentUpon>Pag5.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Page\TaskPages\Pag1.xaml.cs">
@@ -122,6 +131,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Page\TaskPages\Pag7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Page\TaskPages\Pag8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Page\TaskPages\Pag9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Page\tema1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -143,11 +164,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Page\Pag4.xaml">
+    <Page Include="View\Page\TaskPages\Pag4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Page\Pag5.xaml">
+    <Page Include="View\Page\TaskPages\Pag5.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

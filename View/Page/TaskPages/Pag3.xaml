@@ -49,8 +49,7 @@
                              Height="286" 
                              TextChanged="Infor3_TextChanged">
                     </TextBox>
-
-                    <Border
+                 <Border
                 Width="150"
                 Height="150"
                 HorizontalAlignment="Right"

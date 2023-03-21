@@ -64,17 +64,17 @@ namespace indProectAnohina.View.Page
 
         private void s7_Click(object sender, RoutedEventArgs e)
         {
-
+            CoreNav.N1.Navigate(new Pag7());
         }
 
         private void s8_Click(object sender, RoutedEventArgs e)
         {
-
+            CoreNav.N1.Navigate(new Pag8());
         }
 
         private void s9_Click(object sender, RoutedEventArgs e)
         {
-
+            CoreNav.N1.Navigate(new Pag9());
         }
 
         private void s10_Click(object sender, RoutedEventArgs e)
