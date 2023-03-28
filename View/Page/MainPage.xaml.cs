@@ -30,7 +30,7 @@ namespace indProectAnohina.View.Page
         private void Randomer_Click(object sender, RoutedEventArgs e)
         {
             Random n= new Random();
-             int o=n.Next(1,9);
+             int o=n.Next(1,7);
 
             if (o == 1)
             {
@@ -60,14 +60,7 @@ namespace indProectAnohina.View.Page
             {
                 MessageBox.Show("Ваша тема - 7", "тема", MessageBoxButton.OK, MessageBoxImage.Information);
             }
-            if (o == 8)
-            {
-                MessageBox.Show("Ваша тема - 8", "тема", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-            if (o == 9)
-            {
-                MessageBox.Show("Ваша тема - 9", "тема", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
+            
 
         }
 

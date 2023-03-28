@@ -82,12 +82,6 @@
     <Compile Include="View\Page\TaskPages\Pag7.xaml.cs">
       <DependentUpon>Pag7.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Page\TaskPages\Pag8.xaml.cs">
-      <DependentUpon>Pag8.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Page\TaskPages\Pag9.xaml.cs">
-      <DependentUpon>Pag9.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\Page\tema1.xaml.cs">
       <DependentUpon>tema1.xaml</DependentUpon>
     </Compile>
@@ -132,14 +126,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Page\TaskPages\Pag7.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\Page\TaskPages\Pag8.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\Page\TaskPages\Pag9.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -228,6 +214,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\intervali.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\uy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fonts\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.8.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.8.0\build\MaterialDesignThemes.targets')" />

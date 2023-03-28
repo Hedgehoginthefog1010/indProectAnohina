@@ -64,16 +64,7 @@
                                 Style="{StaticResource Mane1}"
                                 Content="7"
                                 Click="s7_Click"></Button>
-                            <Button
-                                x:Name="s8"
-                                Style="{StaticResource Mane1}"
-                                Content="8"
-                                Click="s8_Click"></Button>
-                            <Button
-                                x:Name="s9"
-                                Style="{StaticResource Mane1}"
-                                Content="9"
-                                Click="s9_Click"></Button>
+                            
                             <Button
                                 x:Name="s10"
                                 Style="{StaticResource Mane1}"
@@ -100,6 +91,15 @@
                 <Grid>
                     <Image Source="/Images/16.jpg" 
                            Stretch="UniformToFill"/>
+                    <TextBlock Style="{StaticResource MaterialDesignBody2TextBlock}" 
+                               Margin="0,49,83,247">
+                        <TextBox x:Name="Caver5"
+                                 TextChanged="Caver5_TextChanged"
+                                 Foreground="White"
+                                 FontSize="36"
+                                 FontFamily="Riffic Bold"></TextBox>
+                        
+                    </TextBlock>
 
                 </Grid>
 

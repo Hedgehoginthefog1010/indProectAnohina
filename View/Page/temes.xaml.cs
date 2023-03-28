@@ -25,6 +25,7 @@ namespace indProectAnohina.View.Page
         public temes()
         {
             InitializeComponent();
+            Caver5.Text = "Познавай тот ритм, что в жизни\nчеловеческой сокрыт.";
         }
 
        
@@ -67,19 +68,16 @@ namespace indProectAnohina.View.Page
             CoreNav.N1.Navigate(new Pag7());
         }
 
-        private void s8_Click(object sender, RoutedEventArgs e)
-        {
-            CoreNav.N1.Navigate(new Pag8());
-        }
-
-        private void s9_Click(object sender, RoutedEventArgs e)
-        {
-            CoreNav.N1.Navigate(new Pag9());
-        }
+        
 
         private void s10_Click(object sender, RoutedEventArgs e)
         {
             CoreNav.N1.Navigate(new MainPage());
+
+        }
+
+        private void Caver5_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }
