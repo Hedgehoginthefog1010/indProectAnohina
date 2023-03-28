@@ -97,7 +97,7 @@
                                  TextChanged="Caver5_TextChanged"
                                  Foreground="White"
                                  FontSize="36"
-                                 FontFamily="Riffic Bold"></TextBox>
+                                 FontFamily="Veranda"></TextBox>
                         
                     </TextBlock>
 
